@@ -1,18 +1,22 @@
+# --- Python & System ---
 .venv/
 __pycache__/
-.env
-
-postgres_data/
-*.csv.gz
-*.csv
-
 .DS_Store
 
-# Google Cloud Keys (CRITICAL!)
-my-creds.json
-*.json  # Можна навіть так, щоб випадково інший ключ не залити
+# --- Secrets (БЕЗПЕКА!) ---
+.env
+io_config.yaml       # <--- ТУТ ПАРОЛІ! НЕ ЗАБУДЬ!
 
-# Terraform (ВАЖЛИВО ДОДАТИ!)
+# --- Data & Logs ---
+postgres_data/       # База даних
+mage_data/           # Логи Mage (сміття)
+*.csv
+*.csv.gz
+*.parquet            # Mage часто зберігає в цьому форматі
+
+# --- Cloud & Terraform (На майбутнє) ---
+my-creds.json
+*.json               # Обережно, але безпечно для ключів
 .terraform/
 *.tfstate
 *.tfstate.backup
