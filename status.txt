@@ -1,0 +1,17 @@
+PROJECT: DE Zoomcamp 2025
+CURRENT MODULE: 1 (Docker, SQL, Terraform)
+
+STATUS:
+- Infrastructure: Local Docker environment created (Folder: 01-docker-sql).
+- Containers: Postgres 13 + pgAdmin 4 (docker-compose.yaml created).
+- Network: 'zoomcamp-net' is active.
+- Access: pgAdmin connected to DB (Checkpoint 1 passed).
+
+IMMEDIATE GOAL:
+- Ingest Data: Need to load 'green_tripdata_2019-10.csv.gz' and 'taxi+_zone_lookup.csv'.
+- Homework: Solve 4 SQL questions based on this data.
+
+USER CONTEXT:
+- Level: Strong Junior (Knows Python, SQL, Docker, Linux).
+- Note: Skip basic explanations. Focus on code and architecture.
+- Tooling: No Mage/Airflow for this module. Using Python script.

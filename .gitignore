@@ -1,0 +1,32 @@
+# --- System & IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Python ---
+__pycache__/
+*.pyc
+# Ігноруємо ВСІ віртуальні оточення, де б вони не були
+venv/
+env/
+.env
+
+# --- Data (КРИТИЧНО ВАЖЛИВО) ---
+# Ми ніколи не комітимо дані в гіт (GitHub заблокує файли >100МБ)
+*.csv
+*.csv.gz
+*.parquet
+*.avro
+# Ігноруємо папки data/, де б вони не були
+data/
+
+# --- Docker & Database ---
+# Ігноруємо локальні файли бази даних (те, що ми маунтили)
+ny_taxi_postgres_data/
+
+# --- Terraform (знадобиться в наступному уроці) ---
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
